@@ -96,11 +96,31 @@
         }
         
         /* TEXT CONTAINER FOR PERFECT ALIGNMENT */
-        .text-container {
-            max-width: 450px;
-            margin: 0 auto 2rem auto;
-            text-align: center;
-        }
+        /* TEXT CONTAINER FOR PERFECT ALIGNMENT */
+.text-container {
+    max-width: 450px;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Make sure images and video stay consistent */
+.product-image, .video-container {
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+    .text-container {
+        max-width: 380px;
+        padding: 0 10px;
+    }
+}
         
         .cta-button {
             display: inline-block;
