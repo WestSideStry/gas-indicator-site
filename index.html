@@ -37,6 +37,22 @@
             font-size: 1.5rem;
             color: #2c5530;
         }
+/* Make headlines same width as product images */
+h1, h2 {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+    h1, h2 {
+        max-width: 380px;
+        padding: 0 10px;
+    }
+}
         
         p {
             font-size: 1rem;
